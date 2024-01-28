@@ -85,7 +85,7 @@ function Navbar() {
   }
 
   return (
-    <div className={header ? 'sticky top-0 h-20 mx-auto px-5 flex-col gap-10 bg-sky-100' 
+    <div className={header ? 'sticky top-0 h-20 mx-auto px-5 flex flex-col-2 items-center justify-center bg-sky-100' 
     : 'h-20 mx-auto bg-sky-100 flex flex-col-2 items-center justify-center px-5'}>
       <h3 className="text-xl basis-2/6 text-slate-900 font-semibold text-center place-self-center">Dr. Ramses</h3>
       <div className="flex flex-row py-5">
