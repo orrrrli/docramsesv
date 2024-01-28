@@ -9,7 +9,7 @@ function Navbar() {
   const menuRef = useRef(null);
 
   const scrollHeader = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 15) {
       setHeader(true);
     } else {
       setHeader(false);
@@ -56,7 +56,7 @@ function Navbar() {
   const renderMobileMenu = () => {
     if (isMobile) {
       return (
-        <div className="flex flex-col mt-2" ref={menuRef}>
+        <div className="flex flex-col mt-2 mb-2" ref={menuRef}>
           <button className="text-slate-900 font-normal" onClick={toggleMenu}>
             <IoMenu size={30} />
           </button>
