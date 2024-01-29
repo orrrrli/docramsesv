@@ -1,49 +1,56 @@
+
 function Experience () {
     return ( 
-        <div className="flex md:h-screen items-center justify-center bg-white px-6 py-4 md:px-60">
-        <div className="border-l-2 border-dashed">
-            <div className="relative w-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-800">
-                <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-            </svg>
-            <div className="ml-6">
-                <h4 className="font-bold text-sky-800">Frontend Development.</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-                <span className="mt-1 block text-sm font-semibold text-sky-800">2007</span>
-            </div>
-            </div>
-            <div className="relative w-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-800">
-                <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-            </svg>
-            <div className="ml-6">
-                <h4 className="font-bold text-sky-800">Graphic Design.</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor.</p>
-                <span className="mt-1 block text-sm font-semibold text-sky-800">2007</span>
-            </div>
-            </div>
-            <div className="relative w-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-800">
-                <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-            </svg>
-            <div className="ml-6">
-                <h4 className="font-bold text-sky-800">Lead Ui/Ux Designer.</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-                <span className="mt-1 block text-sm font-semibold text-sky-800">2007</span>
-            </div>
-            </div>
-            <div className="relative w-full">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="absolute -top-0.5 z-10 -ml-3.5 h-7 w-7 rounded-full text-sky-800">
-                <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
-            </svg>
-            <div className="ml-6">
-                <h4 className="font-bold text-sky-800">Lead Ui/Ux Designer.</h4>
-                <p className="mt-2 max-w-screen-sm text-sm text-gray-500">Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet urna. Quisque fringilla mollis risus, eu pulvinar dolor</p>
-                <span className="mt-1 block text-sm font-semibold text-sky-800">2007</span>
-            </div>
-            </div>
-        </div>
-        </div>
+       <div className="m-10">
+            <h3 className="text-4xl text-center text-gray-700 font-bold mb-6 ml-3">Experiencia</h3>
+            <ol>
+                <div className="md:flex justify-center">
+                    <li className="border-l-2 border-sky-700"></li>
+                    <div className="bg-sky-800 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+                        </svg>
+                    </div>
+                    <div className="block p-6 rounded-lg shadow-lg bg-white-50 max-w-md ml-6 mb-10">
+                        <div className="flex justify-between mb-4">
+                        <a href="#!" className="font-medium text-sky-600">New Web Design</a>
+                        <a href="#!" className="font-medium text-sky-600">04 / 02 / 2022</a>
+                        </div>
+                        <p className="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.</p>
+                    </div>
+                </div>
+                <div className="md:flex justify-center">
+                    <li className="border-l-2 border-sky-700"></li>
+                    <div className="bg-sky-800 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+                        </svg>
+                    </div>
+                    <div className="block p-6 rounded-lg shadow-lg bg-white-50 max-w-md ml-6 mb-10">
+                        <div className="flex justify-between mb-4">
+                        <a href="#!" className="font-medium text-sky-600">New Web Design</a>
+                        <a href="#!" className="font-medium text-sky-600">04 / 02 / 2022</a>
+                        </div>
+                        <p className="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.</p>
+                    </div>
+                </div>
+                <div className="md:flex justify-center">
+                    <li className="border-l-2 border-sky-700"></li>
+                    <div className="bg-sky-800 w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
+                        </svg>
+                    </div>
+                    <div className="block p-6 rounded-lg shadow-lg bg-white-50 max-w-md ml-6 mb-10">
+                        <div className="flex justify-between mb-4">
+                        <a href="#!" className="font-medium text-sky-600">New Web Design</a>
+                        <a href="#!" className="font-medium text-sky-600">04 / 02 / 2022</a>
+                        </div>
+                        <p className="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.</p>
+                    </div>
+                </div>
+            </ol>
+       </div>
     )
 }
 export default Experience;
