@@ -1,12 +1,13 @@
 import { useEffect, useState, useRef } from 'react';
 import { IoMenu } from "react-icons/io5";
-
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
   const [header, setHeader] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
   const scrollHeader = () => {
     if (window.scrollY >= 15) {
@@ -62,21 +63,21 @@ function Navbar() {
           </button>
           {menuOpen && (
             <div className="flex flex-col gap-5 px-2 rounded-lg bg-sky-100/90 relative top-20">
-              <a href="#" className="text-slate-900 font-normal">
+              <HashLink to="/" className="text-slate-900 font-normal">
                 Home
-              </a>
-              <a href="#" className="text-slate-900 font-normal">
+              </HashLink>
+              <HashLink to="#mision" className="text-slate-900 font-normal">
                 Mision y Vision
-              </a>
-              <a href="#" className="text-slate-900 font-normal">
+              </HashLink>
+              <HashLink to="#experience" className="text-slate-900 font-normal">
                 Quien soy
-              </a>
-              <a href="#" className="text-slate-900 font-normal">
+              </HashLink>
+              <HashLink to="#images" className="text-slate-900 font-normal">
                 Herramientas de control
-              </a>
-              <a href="#" className="text-slate-900 font-normal">
+              </HashLink>
+              <HashLink href="#contact" className="text-slate-900 font-normal">
                 Contacto
-              </a>
+              </HashLink>
             </div>
           )}
         </div>
@@ -92,21 +93,11 @@ function Navbar() {
         {isMobile && renderMobileMenu()}
         {!isMobile && (
           <div className="flex gap-5 ">
-            <a href="#" className="text-slate-900 font-normal">
-              Home
-            </a>
-            <a href="#" className="text-slate-900 font-normal">
-              Mision y Vision
-            </a>
-            <a href="#" className="text-slate-900 font-normal">
-              Quien soy
-            </a>
-            <a href="#" className="text-slate-900 font-normal">
-              Herramientas de control
-            </a>
-            <a href="#" className="text-slate-900 font-normal">
-              Contacto
-            </a>
+            <HashLink to="/" exact activeClassName="active" onClick={() => scrollToRef(null)}>Home</HashLink>
+            <HashLink to="#mision" activeClassName="active">Mision y Vision</HashLink>
+            <HashLink to="#experience" activeClassName="active">Quien Soy</HashLink>
+            <HashLink to="#images" activeClassName="active">Herramientas de Control</HashLink>
+            <HashLink to="#contact" activeClassName="active">Contacto</HashLink>
           </div>
         )}
       </div>

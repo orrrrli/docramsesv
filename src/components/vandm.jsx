@@ -11,8 +11,8 @@ function Mision ()
 
     return (
     <>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center bg-sky-100 place-items-center py-5">
-            <div className="m-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center bg-sky-100 place-items-center py-5" id="mision" > 
+            <div className="m-10" >
                 <h1 className="text-6xl font-bold text-slate-900 text-center">Vision</h1>
                 <p className="pt-4 text-lg text-center">
                 En nuestra clínica especializada en diabetes, nos dedicamos a proporcionar un enfoque integral para el manejo de esta enfermedad crónica.

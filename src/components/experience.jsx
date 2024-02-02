@@ -2,7 +2,7 @@
 function Experience () {
     return ( 
        <div className="m-10">
-            <h3 className="text-4xl text-center text-gray-700 font-bold mb-6 ml-3">Experiencia</h3>
+            <h3 className="text-4xl text-center text-gray-700 font-bold mb-6 ml-3" id="experience">Experiencia</h3>
             <ol>
                 <div className="md:flex justify-center">
                     <li className="border-l-2 border-sky-700"></li>
