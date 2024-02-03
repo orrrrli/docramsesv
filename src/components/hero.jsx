@@ -11,7 +11,7 @@ function Hero() {
     };
 
     return (
-            <section className="w-full h-full md:py-72 py-48" style={sectionStyle}>
+            <section className="w-full h-full md:py-80 py-48" style={sectionStyle}>
                 <div className="container mx-auto text-center text-gray-800">
                     <h1 className="text-5xl font-bold mb-6">Su aliado en el control y manejo de la diabetes.</h1>
                     <p className="text-xl mb-12"> Transformando vidas a través del conocimiento y cuidado especializado.</p>

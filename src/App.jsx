@@ -1,4 +1,4 @@
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import Mision from './components/vandm';
@@ -8,14 +8,18 @@ import ContactCard from './components/contactcard';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <div>
         <Navbar />
-        <Hero/>
-        <Mision/>
-        <Experience/>
-        <Images/>
-        <ContactCard/>
-    </BrowserRouter>  
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/mision" element={<Mision />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/images" element={<Images />} />
+          <Route path="/contact" element={<ContactCard />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

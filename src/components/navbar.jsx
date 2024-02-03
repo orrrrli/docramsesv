@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { IoMenu } from "react-icons/io5";
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [header, setHeader] = useState(false);
@@ -63,21 +63,21 @@ function Navbar() {
           </button>
           {menuOpen && (
             <div className="flex flex-col gap-5 px-2 rounded-lg bg-sky-100/90 relative top-20">
-              <HashLink to="/" className="text-slate-900 font-normal">
+              <Link to="/" className="text-slate-900 font-normal">
                 Home
-              </HashLink>
-              <HashLink to="#mision" className="text-slate-900 font-normal">
+              </Link>
+              <Link to="/mision" className="text-slate-900 font-normal">
                 Mision y Vision
-              </HashLink>
-              <HashLink to="#experience" className="text-slate-900 font-normal">
+              </Link>
+              <Link to="/experience" className="text-slate-900 font-normal">
                 Quien soy
-              </HashLink>
-              <HashLink to="#images" className="text-slate-900 font-normal">
+              </Link>
+              <Link to="/images" className="text-slate-900 font-normal">
                 Herramientas de control
-              </HashLink>
-              <HashLink href="#contact" className="text-slate-900 font-normal">
+              </Link>
+              <Link href="/contact" className="text-slate-900 font-normal">
                 Contacto
-              </HashLink>
+              </Link>
             </div>
           )}
         </div>
@@ -93,11 +93,11 @@ function Navbar() {
         {isMobile && renderMobileMenu()}
         {!isMobile && (
           <div className="flex gap-5 ">
-            <HashLink to="/" exact activeClassName="active" onClick={() => scrollToRef(null)}>Home</HashLink>
-            <HashLink to="#mision" activeClassName="active">Mision y Vision</HashLink>
-            <HashLink to="#experience" activeClassName="active">Quien Soy</HashLink>
-            <HashLink to="#images" activeClassName="active">Herramientas de Control</HashLink>
-            <HashLink to="#contact" activeClassName="active">Contacto</HashLink>
+            <Link to="/" exact activeClassName="active" onClick={() => scrollToRef(null)}>Home</Link>
+            <Link to="/mision" activeClassName="active">Mision y Vision</Link>
+            <Link to="/experience" activeClassName="active">Quien Soy</Link>
+            <Link to="/images" activeClassName="active">Herramientas de Control</Link>
+            <Link to="/contact" activeClassName="active">Contacto</Link>
           </div>
         )}
       </div>
